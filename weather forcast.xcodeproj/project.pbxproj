@@ -3,17 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		48B535491327D4EE1F311074 /* Pods_weather_forcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A04B59E7678E52E8DDA61CF /* Pods_weather_forcast.framework */; };
 		EA66176B2999333E0031B608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66176A2999333E0031B608 /* AppDelegate.swift */; };
 		EA66176D2999333E0031B608 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66176C2999333E0031B608 /* SceneDelegate.swift */; };
-		EA66176F2999333E0031B608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66176E2999333E0031B608 /* ViewController.swift */; };
+		EA66176F2999333E0031B608 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66176E2999333E0031B608 /* MainViewController.swift */; };
 		EA6617722999333E0031B608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6617702999333E0031B608 /* Main.storyboard */; };
 		EA6617742999333F0031B608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6617732999333F0031B608 /* Assets.xcassets */; };
 		EA6617772999333F0031B608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6617752999333F0031B608 /* LaunchScreen.storyboard */; };
+		EA661780299934C90031B608 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66177F299934C90031B608 /* APIKeyManager.swift */; };
+		EA661785299935BF0031B608 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661784299935BF0031B608 /* BaseViewController.swift */; };
+		EA661788299936040031B608 /* BaseServiceRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661787299936040031B608 /* BaseServiceRequester.swift */; };
+		EA66178A299937350031B608 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661789299937350031B608 /* APIEndpoint.swift */; };
+		EA66178C29993A240031B608 /* ForcastListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66178B29993A240031B608 /* ForcastListModel.swift */; };
+		EA661792299943D90031B608 /* CurrentWeaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661791299943D90031B608 /* CurrentWeaterModel.swift */; };
+		EA661794299943EA0031B608 /* MainCurrentWeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661793299943EA0031B608 /* MainCurrentWeater.swift */; };
+		EA66179E299945640031B608 /* CurrentWeaterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661798299945640031B608 /* CurrentWeaterPresenter.swift */; };
+		EA66179F299945640031B608 /* CurrentWeaterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA661799299945640031B608 /* CurrentWeaterRouter.swift */; };
+		EA6617A0299945640031B608 /* CurrentWeaterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66179A299945640031B608 /* CurrentWeaterModels.swift */; };
+		EA6617A1299945640031B608 /* CurrentWeaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66179B299945640031B608 /* CurrentWeaterViewController.swift */; };
+		EA6617A2299945640031B608 /* CurrentWeaterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66179C299945640031B608 /* CurrentWeaterInteractor.swift */; };
+		EA6617A3299945640031B608 /* CurrentWeaterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA66179D299945640031B608 /* CurrentWeaterViewController.xib */; };
+		EA6617AA299946AF0031B608 /* ForcastTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617A4299946AF0031B608 /* ForcastTablePresenter.swift */; };
+		EA6617AB299946AF0031B608 /* ForcastTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617A5299946AF0031B608 /* ForcastTableRouter.swift */; };
+		EA6617AC299946AF0031B608 /* ForcastTableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617A6299946AF0031B608 /* ForcastTableModels.swift */; };
+		EA6617AD299946AF0031B608 /* ForcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617A7299946AF0031B608 /* ForcastTableViewController.swift */; };
+		EA6617AE299946AF0031B608 /* ForcastTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617A8299946AF0031B608 /* ForcastTableInteractor.swift */; };
+		EA6617AF299946AF0031B608 /* ForcastTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6617A9299946AF0031B608 /* ForcastTableViewController.xib */; };
+		EA6617B2299948130031B608 /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617B1299948130031B608 /* IBDesignable.swift */; };
+		EA6617B4299954AE0031B608 /* MainForcastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617B3299954AE0031B608 /* MainForcastModel.swift */; };
+		EA6617B6299955470031B608 /* WeaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617B5299955470031B608 /* WeaterModel.swift */; };
+		EA6617B9299957320031B608 /* ForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6617B8299957320031B608 /* ForcastTableViewCell.swift */; };
+		EA6617BB2999573A0031B608 /* ForcastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6617BA2999573A0031B608 /* ForcastTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +47,35 @@
 		EA6617672999333E0031B608 /* weather forcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weather forcast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA66176A2999333E0031B608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA66176C2999333E0031B608 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA66176E2999333E0031B608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA66176E2999333E0031B608 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA6617712999333E0031B608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA6617732999333F0031B608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6617762999333F0031B608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA6617782999333F0031B608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA66177F299934C90031B608 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		EA661784299935BF0031B608 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EA661787299936040031B608 /* BaseServiceRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceRequester.swift; sourceTree = "<group>"; };
+		EA661789299937350031B608 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		EA66178B29993A240031B608 /* ForcastListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastListModel.swift; sourceTree = "<group>"; };
+		EA661791299943D90031B608 /* CurrentWeaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeaterModel.swift; sourceTree = "<group>"; };
+		EA661793299943EA0031B608 /* MainCurrentWeater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrentWeater.swift; sourceTree = "<group>"; };
+		EA661798299945640031B608 /* CurrentWeaterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeaterPresenter.swift; sourceTree = "<group>"; };
+		EA661799299945640031B608 /* CurrentWeaterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeaterRouter.swift; sourceTree = "<group>"; };
+		EA66179A299945640031B608 /* CurrentWeaterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeaterModels.swift; sourceTree = "<group>"; };
+		EA66179B299945640031B608 /* CurrentWeaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeaterViewController.swift; sourceTree = "<group>"; };
+		EA66179C299945640031B608 /* CurrentWeaterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeaterInteractor.swift; sourceTree = "<group>"; };
+		EA66179D299945640031B608 /* CurrentWeaterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentWeaterViewController.xib; sourceTree = "<group>"; };
+		EA6617A4299946AF0031B608 /* ForcastTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTablePresenter.swift; sourceTree = "<group>"; };
+		EA6617A5299946AF0031B608 /* ForcastTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTableRouter.swift; sourceTree = "<group>"; };
+		EA6617A6299946AF0031B608 /* ForcastTableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTableModels.swift; sourceTree = "<group>"; };
+		EA6617A7299946AF0031B608 /* ForcastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTableViewController.swift; sourceTree = "<group>"; };
+		EA6617A8299946AF0031B608 /* ForcastTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTableInteractor.swift; sourceTree = "<group>"; };
+		EA6617A9299946AF0031B608 /* ForcastTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForcastTableViewController.xib; sourceTree = "<group>"; };
+		EA6617B1299948130031B608 /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
+		EA6617B3299954AE0031B608 /* MainForcastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainForcastModel.swift; sourceTree = "<group>"; };
+		EA6617B5299955470031B608 /* WeaterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaterModel.swift; sourceTree = "<group>"; };
+		EA6617B8299957320031B608 /* ForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastTableViewCell.swift; sourceTree = "<group>"; };
+		EA6617BA2999573A0031B608 /* ForcastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForcastTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +104,6 @@
 				CDA88E8BAD55AE9E38505E3C /* Pods-weather forcast.debug.xcconfig */,
 				D668306D24D3DEEDB8BE4D6F /* Pods-weather forcast.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +128,111 @@
 		EA6617692999333E0031B608 /* weather forcast */ = {
 			isa = PBXGroup;
 			children = (
+				EA6617B0299948040031B608 /* Extension */,
+				EA661795299945230031B608 /* Scenes */,
+				EA661783299935AD0031B608 /* BaseClass */,
+				EA661782299935810031B608 /* Models */,
+				EA661781299935740031B608 /* Services */,
+				EA66177E299934AD0031B608 /* Resource */,
 				EA66176A2999333E0031B608 /* AppDelegate.swift */,
 				EA66176C2999333E0031B608 /* SceneDelegate.swift */,
-				EA66176E2999333E0031B608 /* ViewController.swift */,
+				EA66176E2999333E0031B608 /* MainViewController.swift */,
 				EA6617702999333E0031B608 /* Main.storyboard */,
 				EA6617732999333F0031B608 /* Assets.xcassets */,
 				EA6617752999333F0031B608 /* LaunchScreen.storyboard */,
 				EA6617782999333F0031B608 /* Info.plist */,
 			);
 			path = "weather forcast";
+			sourceTree = "<group>";
+		};
+		EA66177E299934AD0031B608 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EA66177F299934C90031B608 /* APIKeyManager.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EA661781299935740031B608 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA661787299936040031B608 /* BaseServiceRequester.swift */,
+				EA661789299937350031B608 /* APIEndpoint.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA661782299935810031B608 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA6617B3299954AE0031B608 /* MainForcastModel.swift */,
+				EA66178B29993A240031B608 /* ForcastListModel.swift */,
+				EA6617B5299955470031B608 /* WeaterModel.swift */,
+				EA661791299943D90031B608 /* CurrentWeaterModel.swift */,
+				EA661793299943EA0031B608 /* MainCurrentWeater.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA661783299935AD0031B608 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				EA661784299935BF0031B608 /* BaseViewController.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		EA661795299945230031B608 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EA661797299945440031B608 /* Forcast */,
+				EA6617962999453D0031B608 /* CurrentWeater */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA6617962999453D0031B608 /* CurrentWeater */ = {
+			isa = PBXGroup;
+			children = (
+				EA661798299945640031B608 /* CurrentWeaterPresenter.swift */,
+				EA661799299945640031B608 /* CurrentWeaterRouter.swift */,
+				EA66179A299945640031B608 /* CurrentWeaterModels.swift */,
+				EA66179B299945640031B608 /* CurrentWeaterViewController.swift */,
+				EA66179C299945640031B608 /* CurrentWeaterInteractor.swift */,
+				EA66179D299945640031B608 /* CurrentWeaterViewController.xib */,
+			);
+			path = CurrentWeater;
+			sourceTree = "<group>";
+		};
+		EA661797299945440031B608 /* Forcast */ = {
+			isa = PBXGroup;
+			children = (
+				EA6617B7299957200031B608 /* TableViewCell */,
+				EA6617A4299946AF0031B608 /* ForcastTablePresenter.swift */,
+				EA6617A5299946AF0031B608 /* ForcastTableRouter.swift */,
+				EA6617A6299946AF0031B608 /* ForcastTableModels.swift */,
+				EA6617A7299946AF0031B608 /* ForcastTableViewController.swift */,
+				EA6617A8299946AF0031B608 /* ForcastTableInteractor.swift */,
+				EA6617A9299946AF0031B608 /* ForcastTableViewController.xib */,
+			);
+			path = Forcast;
+			sourceTree = "<group>";
+		};
+		EA6617B0299948040031B608 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA6617B1299948130031B608 /* IBDesignable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EA6617B7299957200031B608 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA6617B8299957320031B608 /* ForcastTableViewCell.swift */,
+				EA6617BA2999573A0031B608 /* ForcastTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +246,7 @@
 				EA6617632999333E0031B608 /* Sources */,
 				EA6617642999333E0031B608 /* Frameworks */,
 				EA6617652999333E0031B608 /* Resources */,
+				B86108FE78D6D90DF5F898BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,7 +273,7 @@
 				};
 			};
 			buildConfigurationList = EA6617622999333E0031B608 /* Build configuration list for PBXProject "weather forcast" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -152,7 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6617772999333F0031B608 /* LaunchScreen.storyboard in Resources */,
+				EA6617AF299946AF0031B608 /* ForcastTableViewController.xib in Resources */,
 				EA6617742999333F0031B608 /* Assets.xcassets in Resources */,
+				EA6617A3299945640031B608 /* CurrentWeaterViewController.xib in Resources */,
+				EA6617BB2999573A0031B608 /* ForcastTableViewCell.xib in Resources */,
 				EA6617722999333E0031B608 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +329,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B86108FE78D6D90DF5F898BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weather forcast/Pods-weather forcast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weather forcast/Pods-weather forcast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weather forcast/Pods-weather forcast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,9 +353,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA66176F2999333E0031B608 /* ViewController.swift in Sources */,
+				EA661792299943D90031B608 /* CurrentWeaterModel.swift in Sources */,
+				EA6617AC299946AF0031B608 /* ForcastTableModels.swift in Sources */,
+				EA6617B9299957320031B608 /* ForcastTableViewCell.swift in Sources */,
+				EA66178C29993A240031B608 /* ForcastListModel.swift in Sources */,
+				EA6617A1299945640031B608 /* CurrentWeaterViewController.swift in Sources */,
+				EA66178A299937350031B608 /* APIEndpoint.swift in Sources */,
+				EA661785299935BF0031B608 /* BaseViewController.swift in Sources */,
+				EA661788299936040031B608 /* BaseServiceRequester.swift in Sources */,
+				EA6617A2299945640031B608 /* CurrentWeaterInteractor.swift in Sources */,
+				EA6617B4299954AE0031B608 /* MainForcastModel.swift in Sources */,
+				EA661794299943EA0031B608 /* MainCurrentWeater.swift in Sources */,
+				EA661780299934C90031B608 /* APIKeyManager.swift in Sources */,
+				EA6617AB299946AF0031B608 /* ForcastTableRouter.swift in Sources */,
+				EA66179F299945640031B608 /* CurrentWeaterRouter.swift in Sources */,
+				EA6617A0299945640031B608 /* CurrentWeaterModels.swift in Sources */,
+				EA6617B6299955470031B608 /* WeaterModel.swift in Sources */,
+				EA66176F2999333E0031B608 /* MainViewController.swift in Sources */,
+				EA6617B2299948130031B608 /* IBDesignable.swift in Sources */,
 				EA66176B2999333E0031B608 /* AppDelegate.swift in Sources */,
+				EA6617AE299946AF0031B608 /* ForcastTableInteractor.swift in Sources */,
 				EA66176D2999333E0031B608 /* SceneDelegate.swift in Sources */,
+				EA6617AA299946AF0031B608 /* ForcastTablePresenter.swift in Sources */,
+				EA66179E299945640031B608 /* CurrentWeaterPresenter.swift in Sources */,
+				EA6617AD299946AF0031B608 /* ForcastTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
